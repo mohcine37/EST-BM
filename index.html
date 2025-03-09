@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EST Beni Mellal</title>
+    <link rel="stylesheet" href="siteweb.css">
+</head>
+<body>
+    <header>
+        <div class="header-center">
+            <img src="C:/Users/Mohcine/Desktop/logo.png" alt="Logo de l'EST Beni Mellal" class="logo">
+            <h1>EST Beni Mellal</h1>
+        </div>
+        <nav class="horizontal-menu">
+            <ul>
+                <li><a href="#cours">Cours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Section Cours -->
+<div class="cours" id="cours">
+    <h2>Nos Cours en informatique</h2>
+    <div class="course-card">
+        <h3>Introduction à l'informatique</h3>
+        <p>Un cours d'introduction à l'informatique pour les débutants.</p>
+        <a href="#" class="see-more">Voir plus</a>
+    </div>
+    <div class="course-card">
+        <h3>Programmation en Python</h3>
+        <p>Apprenez les bases de la programmation avec Python.</p>
+        <a href="#" class="see-more">Voir plus</a>
+    </div>
+    <div class="course-card">
+        <h3>Développement Web</h3>
+        <p>Créez des sites web modernes avec HTML, CSS, et JavaScript.</p>
+        <a href="#" class="see-more">Voir plus</a>
+    </div>
+
+    <h2>Formulaire d'inscription</h2>
+    <form class="course-registration-form">
+        <label for="name-cours">Nom</label>
+        <input type="text" id="name-cours" name="name" placeholder="Votre nom" required>
+        <label for="email-cours">Email</label>
+        <input type="email" id="email-cours" name="email" placeholder="Votre Email" required>
+        <label for="course-name">Choisissez un cours</label>
+        <select id="course-name" name="course-name" required>
+            <option value="" disabled selected>Choisissez un cours</option>
+            <option value="informatique">Introduction à l'informatique</option>
+            <option value="python">Programmation en Python</option>
+            <option value="web">Développement Web</option>
+        </select>
+        <label for="message-cours">Message</label>
+        <textarea id="message-cours" name="message" rows="5" placeholder="Votre message" required></textarea>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+</div>
+
+    <div class="contact" id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Pour toute question, n'hésitez pas à nous contacter en utilisant le formulaire ci-dessous ou via les coordonnées suivantes :</p>
+        <div class="contact-info">
+            <p><span class="icon">📞</span> +2125234-84168</p>
+            <p><span class="icon">📧</span> est@usms.ma</p>
+        </div>
+
+        <h2>Formulaire de contact</h2>
+        <form class="contact-form">
+            <label for="name-contact">Nom</label>
+            <input type="text" id="name-contact" name="name" placeholder="Votre nom" required>
+
+            <label for="email-contact">Email</label>
+            <input type="email" id="email-contact" name="email" placeholder="Votre Email" required>
+
+            <label for="subject">Objet</label>
+            <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required>
+
+            <label for="message-contact">Message</label>
+            <textarea id="message-contact" name="message" rows="5" placeholder="Votre message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 EST Beni Mellal - Tous droits réservés</p>
+        <p>Contactez-nous : +2125234-84168 | est@usms.ma</p>
+    </footer>
+</body>
+</html>
